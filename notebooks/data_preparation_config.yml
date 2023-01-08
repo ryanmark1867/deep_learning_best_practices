@@ -3,6 +3,7 @@ general: # control overall operation
    save_raw_dataframe: False
    save_transformed_dataframe: True
    remove_bad_values: True
+   treat_rooms_as_numeric: False
 columns: # categorize columns
    categorical: # columns with a finite set of values
       - 'neighbourhood_group'
