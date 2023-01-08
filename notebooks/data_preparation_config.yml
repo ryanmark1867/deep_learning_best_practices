@@ -4,26 +4,6 @@ general: # control overall operation
    save_transformed_dataframe: True
    remove_bad_values: True
    treat_rooms_as_numeric: False
-columns: # categorize columns
-   categorical: # columns with a finite set of values
-      - 'neighbourhood_group'
-      - 'neighbourhood'
-      - 'room_type'
-   continuous: # columns with values that can take an unlimited set of values
-      - 'minimum_nights'
-      - 'number_of_reviews'
-      - 'reviews_per_month'
-      - 'calculated_host_listings_count'
-      - 'latitude'
-      - 'longitude'
-   date: # date columns
-      - 'last_review'
-   text: # text columns
-      - 'name'
-      - 'host_name'
-   excluded: # columns that are not used as input features for training
-      - 'price'
-      - 'id'
 category_defaults: # default values to replace missing values
    categorical: missing
    continuous: 0.0
