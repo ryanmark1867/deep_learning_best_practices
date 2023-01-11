@@ -31,8 +31,8 @@ categorical: # categorical columns
       - 'Rooms'
       - 'Property Type'
       - 'Furnishing'
-      - 'Size_type'
-#      - 'Size_type_bin'
+#      - 'Size_type'
+      - 'Size_type_bin'
 continuous: # continuous columns
       - 'Bathrooms'
       - 'Car Parks'
