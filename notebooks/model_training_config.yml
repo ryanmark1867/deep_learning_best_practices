@@ -32,10 +32,11 @@ categorical: # categorical columns
       - 'Property Type'
       - 'Furnishing'
       - 'Size_type'
+#      - 'Size_type_bin'
 continuous: # continuous columns
       - 'Bathrooms'
       - 'Car Parks'
-      - 'Size'
+ #     - 'Size'
 text: []
 excluded: # columns that are not used as input features for training
       - 'Price'

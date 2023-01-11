@@ -4,6 +4,7 @@ general: # control overall operation
    save_transformed_dataframe: True
    remove_bad_values: True
    treat_rooms_as_numeric: False
+   size_bin_count: 10
 category_defaults: # default values to replace missing values
    categorical: missing
    continuous: 0.0
@@ -34,19 +35,6 @@ valid_values: # valid values for columns that have a defined set of valid values
       - 'Private room'
       - 'Shared room'
       - 'Entire home/apt'
-bounding_box: # latitude and longitude extremes for a box that surrounds New York City
-    max_long: -73.70018092
-    max_lat: 40.91617849
-    min_long: -74.25909008
-    min_lat: 40.47739894
-newark_bounding_box: # latitude and longitude extremes for a box that surrounds Newark New Jersey
-    max_long: -74.11278706
-    max_lat: 40.67325015
-    min_long: -74.25132408
-    min_lat: 40.78813864
-geo_columns: # geospatial columns
-    - 'latitude'
-    - 'longitude'
 file_names: # input and output file names
    input_csv: data_kaggle.csv
    pickled_input_dataframe: kl_real_estate_input.pkl
