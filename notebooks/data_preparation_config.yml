@@ -3,7 +3,7 @@ general: # control overall operation
    save_raw_dataframe: False
    save_transformed_dataframe: True
    remove_bad_values: True
-   treat_rooms_as_numeric: False
+   treat_rooms_as_numeric: True
    size_bin_count: 10
 category_defaults: # default values to replace missing values
    categorical: missing
@@ -11,30 +11,12 @@ category_defaults: # default values to replace missing values
    text: missing
    date: 2019-01-01
    excluded: missing
-category_invalid_value_replacements: # default values to replace invalid values
-   categorical: bad_categorical
-   continuous: bad_continuous
-   text: bad_text
-   date: bad_date
-   exclude: bad_excluded
-latitude_replacement: bad_latitude
-longitude_replacement: bad_longitude
-non_negative_continuous: # continuous columns where only non-negative values are valid
-    - 'minimum_nights'
-    - 'number_of_reviews'
-    - 'reviews_per_month'
-    - 'calculated_host_listings_count'
-valid_values: # valid values for columns that have a defined set of valid values
-   neighbourhood_group:
-      - 'Bronx'
-      - 'Brooklyn'
-      - 'Queens'
-      - 'Manhattan'
-      - 'Staten Island'
-   room_type:
-      - 'Private room'
-      - 'Shared room'
-      - 'Entire home/apt'
+misc_col_dict: # default values to replace missing values for general columns 
+   Bathrooms: 0
+   Car Parks: 0
+   Furnishing: unknown_furnishing
+   Property Type: unknown_property
+   Location: unknown_location
 file_names: # input and output file names
    input_csv: data_kaggle.csv
    pickled_input_dataframe: kl_real_estate_input.pkl
