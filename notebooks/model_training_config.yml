@@ -36,13 +36,17 @@ categorical: # categorical columns
 continuous: # continuous columns
       - 'Bathrooms'
       - 'Car Parks'
- #     - 'Size'
+ #     - 'Rooms'
+      - 'Size'
 text: []
 excluded: # columns that are not used as input features for training
       - 'Price'
       - 'Car Parks'
       - 'Rooms'
+metrics:
+    - 'accuracy'
 hyperparameters: # deep learning model hyperparameters
+   optimizer: adam
    learning_rate: 0.001
    dropout_rate: 0.0003 #0.003
    l2_lambda: 0.0003 #7.5
