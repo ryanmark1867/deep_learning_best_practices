@@ -32,7 +32,7 @@ test_parms: # parameters to control training
    get_test_train_acc: True # switch to control whether block to get test and train accuracy is after training
 categorical: # categorical columns
       - 'Location'
-      - 'Rooms'
+#      - 'Rooms'
       - 'Property Type'
       - 'Furnishing'
 #      - 'Size_type'
@@ -40,7 +40,7 @@ categorical: # categorical columns
 continuous: # continuous columns
       - 'Bathrooms'
       - 'Car Parks'
- #     - 'Rooms'
+      - 'Rooms'
       - 'Size'
 text: []
 excluded: # columns that are not used as input features for training
