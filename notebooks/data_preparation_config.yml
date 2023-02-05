@@ -12,7 +12,7 @@ category_defaults: # default values to replace missing values
    date: 2019-01-01
    excluded: missing
 misc_col_dict: # default values to replace missing values for general columns 
-   Bathrooms: 0
+   Bathrooms: median
    Car Parks: 0
    Furnishing: unknown_furnishing
    Property Type: unknown_property
